@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Super Frog";
+    src: url(src/font/SuperFrog-Yqy1q.ttf);
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+#IntroHeader h2, h1 {
+    text-align: center;
+}
+#title{
+    font-family: 'Super Frog';
+    font-size: 55px;
+    color: #99c37d;
+}
+
+
+#projectsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  }
+
+.projcontitems {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  margin: 5px;
+  color: black;
+background-color: #99c37d;
+}
+
