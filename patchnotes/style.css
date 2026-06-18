@@ -1,5 +1,7 @@
 body {
   background-color: #383838;
+  font-family: 'Courier New', monospace;
+
 }
 
 h1, h2 {text-align: center; color: white}
