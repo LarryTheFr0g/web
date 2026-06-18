@@ -1,13 +1,11 @@
 body {
   background-color: #383838;
   font-family: 'Courier New', monospace;
+  text-align: center;
+  color: white;
 
 }
-
-h1, h2 {text-align: center; color: white}
-p {text-align: center; color: white;}
-a {text-align: center; color: teal;}
-div {text-align: center;}
+a {color: teal;}
 
 .center {
   display: flex;
