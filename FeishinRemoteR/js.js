@@ -4,7 +4,7 @@ setTimeout(() => {
     const dvdicon = `
 <span class="m_8d3afb97 mantine-ActionIcon-icon">
 <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-    <g transform="scale(0.85) translate(2.1,2.1)">
+    <g transform="scale(0.85) translate(5,5)">
         <circle cx="24" cy="24" r="21.5" fill="none" stroke="currentColor" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"/>
         <circle cx="24" cy="24" r="4.9949" fill="none" stroke="currentColor" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M24 2.5V16.039m0 15.744V45.5" fill="none" stroke="currentColor" stroke-width="1.92"/>
