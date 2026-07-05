@@ -1,5 +1,4 @@
 setTimeout(() => {
-	
     let animationEnabled = true;
 
     const dvdicon = `
