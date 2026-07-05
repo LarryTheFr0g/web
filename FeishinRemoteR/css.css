@@ -18,7 +18,7 @@ body {
     --slider-color: #d857ff;
 }
 
-/*Volume sliders unround TODO clean up*/
+/*Volume sliders unround TODO: clean up*/
 .mantine-Slider-track,
 .mantine-Slider-track::before,
 .mantine-Slider-bar {
