@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@900&display=swap');
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    font-family: "Doto", sans-serif !important;
+    overflow-x: hidden !important;
+
+}
+
+
+* {
+    border-radius: 0;
+    box-sizing: border-box;
+    --slider-color: #d857ff;
+}
+
+/*Volume sliders unround TODO clean up*/
+.mantine-Slider-track,
+.mantine-Slider-track::before,
+.mantine-Slider-bar {
+    border-radius: 0 !important;
+}
+
+/*???*/
+div[class*="8bffd616"] {
+    width: 100% !important;
+    max-width: 100vw !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+}
+
+/*???*/
+div[class*="m_6d731127"] {
+    /*justify-content: center !important;*/
+    margin: 0 auto !important;
+    width: 100% !important;
+}
+
+/*???*/
+div[class*="m_b6d8b162"] {
+    text-align: center !important;
+    align-items: center !important;
+}
+
+/*???*/
+div[class*="m_4081bf90"] {
+    width: min(350px, 90vw) !important;
+    margin: 0 auto !important;
+}
+
+
+
+/* top tool bar - TODO */
+div[class*="mantine-Group-root"].m_4081bf90[style*="--group-justify: flex-end"] {
+display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  gap: 2px;
+}
+
+/*favorite button set to hidden for now*/
+div.mantine-Group-root[data-grow="true"][style*="--group-child-width: calc(100% - (0rem - 0rem / 1));"] {
+  display: none !important;
+}
+
+/*?????*/
+div[class*="m_8bffd616 mantine-Flex-root __m__-_r_u_"] {
+  min-width: 250px !important;
+  min-height: 250px !important;
+  max-width: 250px !important;
+  max-height: 250px !important;
+}
+
+
+/* disc container */
+div[class*="mantine-Flex-root"].m_8bffd616[style*="align-items: center; justify-content: center; width: 100%"] {
+  
+    min-width: 250px !important;
+    min-height: 250px !important;
+    max-width: 250px !important;
+    max-height: 250px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    box-shadow: 0 30px 30px rgba(0,0,0,.3);
+}
+
+/* Rotating disc */
+.fs-player-image-module-container {
+    min-width: 250px !important;
+    min-height: 250px !important;
+    max-width: 250px !important;
+    max-height: 250px !important;
+    object-fit: cover;
+    border-radius: 100%;
+
+ /*rotation animation handled by JS now*/
+
+    -webkit-mask-image: radial-gradient(circle, transparent 15%, black 15.5%);
+    mask-image: radial-gradient(circle, transparent 15%, black 15.5%);
+}
+body.disable-disc-mask .fs-player-image-module-container {
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+	border-radius: 0% !important;
+}
+body.disable-disc-mask div[class*="mantine-Flex-root"].m_8bffd616[style*="align-items: center; justify-content: center; width: 100%"] {
+    border-radius: 0 !important;
+}
