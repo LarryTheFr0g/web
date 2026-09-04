@@ -178,7 +178,7 @@ body.site-container > header {
   transition: transform 0.1s ease;
 }
 .socials-btn-img:active {
-  transform: scale(0.95); /* Jemné kliknutí */
+  transform: scale(0.95); 
 }
 
 .toast-notification {
@@ -198,7 +198,7 @@ body.site-container > header {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Třída, kterou JavaScriptem přidáme pro animaci */
+
 .toast-notification.show {
   visibility: visible;
   animation:
@@ -228,7 +228,7 @@ body.site-container > header {
 }
 
 .fav-games-btn:after {
-  content: "▼";
+  content: "▶";
   font-size: 0.8em;
   transition: transform 0.2s ease; /* Plynulá animace otočení */
 }

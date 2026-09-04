@@ -3,13 +3,14 @@
             "Frog enjoyer",
             "OLD TECH RULEz",
             "Win95 Coffee table",
-            "He just might beFauxghi!",
+            "possibly a Fauxghi!",
             "Horrible monsters",
             "Coilguns are cool",
             "Bones! Bones! Bones!",
             "Pretty Flyyy",
             "Play Lunacid, its good",
-            "Play Abiotic Factor"
+            "Play Abiotic Factor",
+            "Ribbit Ribbit Ribbit",
         ];
 
         // 2. Wrap the logic in a function
