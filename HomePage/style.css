@@ -9,7 +9,7 @@
   src: url(src/font/Minecraftia-Regular.ttf);
 }
 body {
-  background-image: url("HomePage/src/img/back2.png");
+  background-image: url("src/img/back2.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -47,7 +47,7 @@ body.site-container > header {
   transform: translateY(clamp(-80px, -8vh, -32px));
 }
 .aboutme-box {
-  background-image: url("HomePage/src/img/lilypad.svg");
+  background-image: url("src/img/lilypad.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
