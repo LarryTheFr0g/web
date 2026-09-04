@@ -3,21 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Larry The Frog</title>
-    <link rel="icon" type="image/x-icon" href="https://cdn0.iconfinder.com/data/icons/font-awesome-solid-vol-2/576/frog-512.png" />
+    <title>Larry's pond</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn0.iconfinder.com/data/icons/font-awesome-solid-vol-2/576/frog-512.png"
+    />
     <link rel="stylesheet" href="HomePage/style.css" />
+    <script src="/HomePage/buttons.js" defer></script>
+    <script src="/HomePage/randomtext.js"></script>
+  </head>
 
-<body>
-  <div id="container" class="flex-container">
-  <div id="IntroHeader" class="flex-items">
-    <h1 id="title"><img src="HomePage/src/img/wordificator_frog.png" width="250"> Larry The Frog</h1>
-    
-    <h2>website is work in progress</h2>
+  <header></header>
+  <body class="site-container">
+    <header>
+      <div class="HeaderTextWrapper">
+        <h1 class="HeaderText">Larry's Pond</h>
+          <h1 id="RandomText">Loading quote...</h1>
+      </div>
+ <div class="aboutme-box">
+
+ <div class="aboutmeText">
+   <h1 class="SocialsText">About me</h1>
+   <p>I go online by Larry/LarryTheFrog, I can speak czech and english, I much prefer the latter<br>
+ I mod games and repair electronics (sadly cannot solder yet)<br>
+I have a cat, her name is "Cat", its a long story</p> 
+ <h4>I play games!</h4><p>My fav genres are: <br>Dungeon Crawlers, Tower defense <br> Open World Survival Craft, Coop PvE horde shooters</p>
+</div>
+<div>
+    <button class="fav-games-btn" onclick="window.location.href='MyFavGames.html'">My Favorite Games</button>
+</div>
+ </div>
+      <div class="socials-bar">
+        <h1 class="SocialsText">My Socials</h1>
+        <div class="socials-bar-buttons-wrapper">
+          <button onclick="copyUsername()" class="socials-button">
+            <img
+              class=".socials-btn-img"
+              src="/HomePage/src/img/icons/discord.webp"
+              alt=""
+              width="45"
+            />
+          </button>
+          <a
+            class="socials-button"
+            href="https://steamcommunity.com/id/lrrydot/"
+            ><img
+              class=".socials-btn-img"
+              src="/HomePage/src/img/icons/steam.png"
+              alt=""
+              width="40"
+            />
+          </a>
+          <a
+            class="socials-button"
+            href="https://www.instagram.com/LarryTheFr0g_/"
+            ><img
+              class=".socials-btn-img"
+              src="/HomePage/src/img/icons/instagram.webp"
+              alt=""
+              width="40"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="socials-bar">
+        <h1 class="SocialsText">Websites I post my mods on</h1>
+        <div class="socials-bar-buttons-wrapper">
+          <a
+            class="socials-button"
+            href="https://modworkshop.net/user/larrythefrog"
+            ><img
+              class=".socials-btn-img"
+              src="/HomePage/src/img/icons/moddingworkshop.svg"
+              alt=""
+              width="50"
+            />
+          </a>
+          <a
+            class="socials-button"
+            href="https://gamebanana.com/members/1590363"
+            ><img
+              class=".socials-btn-img"
+              src="/HomePage/src/img/icons/gamebanana.png"
+              alt=""
+              width="40"
+            />
+          </a>
+          <a
+            class="socials-button"
+            href="https://modrinth.com/user/LarryTheFrog"
+            ><img
+              class=".socials-btn-img"
+              src="/HomePage/src/img/icons/modrinth.png"
+              alt=""
+              width="40"
+            />
+          </a>
+          <a
+            class="socials-button"
+            href="https://www.curseforge.com/members/larrythefrog/projects"
+            ><img
+              class=".socials-btn-img"
+              src="/HomePage/src/img/icons/curseforge.svg"
+              alt=""
+              width="40"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div id="toast" class="toast-notification">
+      Username copied to clipboard!
     </div>
-    <h1> My projects </h1>
-    <div id="projectsContainer"  class="flex-items">
-    <a id="LeyakTimer" class="projcontitems" href="LeyakTimer.html">Leyak Timer</a> </br>
-    <a id="NightreignTracker" class="projcontitems" href="NightreignTracker.html">Nightreign Tracker</a>
-    </div>
-    </div>
-</body>
+  </body>
+</html>

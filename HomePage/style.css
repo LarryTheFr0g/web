@@ -1,74 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 @font-face {
-    font-family: "Super Frog";
-    src: url(src/font/SuperFrog-Yqy1q.ttf);
+  font-family: "Super Frog";
+  src: url(src/font/SuperFrog-Yqy1q.ttf);
 }
-body{
-    font-family: 'Courier New', Courier, monospace;
+@font-face {
+  font-family: "Minecraft";
+  src: url(src/font/Minecraftia-Regular.ttf);
+}
+body {
+  background-image: url("/HomePage/src/img/back2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+button {
+  background-color: none;
+  all: unset;
+  cursor: pointer;
 }
 
-.flex-container {
+.site-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: clamp(2px, 1vh, 10px);
+  height: 100dvh;
+  box-sizing: border-box;
+  padding: clamp(4px, 1.5vh, 16px) clamp(8px, 3vw, 24px);
+}
+body.site-container > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(8px, 2vh, 20px);
+  width: 100%;
+}
+.HeaderTextWrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  transform: translateY(clamp(-80px, -8vh, -32px));
+}
+.aboutme-box {
+  background-image: url("/HomePage/src/img/lilypad.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   align-content: stretch;
+  gap: 4px;
+  text-align: center;
+  font-family: "Caveat Brush";
+  color: rgb(255, 255, 255);
+  font-size: clamp(13px, 2.2vh, 18px);
+  line-height: 1.1;
+  width: min(92vw, 560px);
+  max-height: 42dvh;
+  box-sizing: border-box;
+  padding: clamp(32px, 5vh, 64px) clamp(36px, 7vw, 84px);
+  overflow: hidden;
 }
 
-.flex-items:nth-child(1) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
+.aboutme-box h1,
+.aboutme-box h4,
+.aboutme-box p {
+  margin: clamp(2px, 0.6vh, 8px) 0;
 }
 
-.flex-items:nth-child(2) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
+.HeaderText {
+  font-family: "DynaPuff", system-ui, sans-serif;
+  color: rgb(165, 216, 107);
+  font-size: clamp(42px, 10vh, 100px);
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  text-shadow: 4px 4px 0px rgb(33, 100, 84);
 }
+.SocialsText {
+  font-family: "DynaPuff";
+  color: rgb(165, 216, 107);
+  font-size: 200%;
+  margin: 0;
+  text-shadow: 4px 4px 0px rgb(102, 160, 119);
+}
+#RandomText {
+  font-family: "Minecraft";
+  font-size: 1.5rem;
+  position: absolute;
+  left: 75%;
+  bottom: 55px;
+  color: #ffff00;
+  white-space: nowrap;
+  z-index: 10;
 
-.flex-items:nth-child(3) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-}
-#IntroHeader h2, h1 {
-    text-align: center;
-}
-#title{
-    font-family: 'Super Frog';
-    font-size: 55px;
-    color: #99c37d;
-}
+  /* Angles the text diagonally and establishes the center for the bounce */
+  transform-origin: left center;
+  transform: rotate(25deg);
 
-
-#projectsContainer {
+  /* Continuous smooth heartbeat animation */
+  animation: splash-bounce 0.5s infinite alternate ease-in-out;
+}
+.socials-bar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  gap: 8px;
+}
+.socials-bar-buttons-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
-  align-content: center;
-  }
-
-.projcontitems {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-  margin: 5px;
-  color: black;
-background-color: #99c37d;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 10px;
 }
 
+.socials-button {
+  display: grid;
+  place-items: center;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+@media (max-width: 600px) {
+  .site-container {
+    gap: 1px;
+    padding: 4px 8px;
+  }
+
+  .aboutme-box {
+    width: 100%;
+    max-height: 40dvh;
+    padding: 28px 34px;
+  }
+
+  .aboutme-box br {
+    display: none;
+  }
+
+  .SocialsText {
+    font-size: clamp(18px, 3.4vh, 26px);
+    text-shadow: 2px 2px 0 rgb(102, 160, 119);
+  }
+
+  #RandomText {
+    left: auto;
+    right: 0;
+    bottom: -1.5rem;
+    font-size: clamp(0.6rem, 2.4vw, 1rem);
+  }
+
+  .socials-bar-buttons-wrapper {
+    gap: 4px;
+  }
+
+  .socials-button img {
+    max-width: 36px;
+    max-height: 36px;
+  }
+}
+
+.socials-btn-img {
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.socials-btn-img:active {
+  transform: scale(0.95); /* Jemné kliknutí */
+}
+
+.toast-notification {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  font-family: sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Třída, kterou JavaScriptem přidáme pro animaci */
+.toast-notification.show {
+  visibility: visible;
+  animation:
+    fadein 0.5s,
+    fadeout 0.5s 2.5s;
+}
+
+.fav-games-btn {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 150px; /* Volitelné: zajistí stejnou šířku */
+}
+.fav-games-collapsible-content {
+  display: none; /* Hidden by default */
+  padding-left: 20px;
+  transition: max-height 0.2s ease-out;
+  border-color: #ffff00;
+}
+.fav-games-collapsible-content.show {
+  display: block; /* Shown when active */
+}
+
+.fav-games-btn:after {
+  content: "▼";
+  font-size: 0.8em;
+  transition: transform 0.2s ease; /* Plynulá animace otočení */
+}
+.fav-games-btn.active::after {
+  transform: rotate(180deg);
+}
+
+/* Animace objevení a zmizení */
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+@keyframes splash-bounce {
+  0% {
+    transform: rotate(25deg) scale(0.9);
+  }
+  100% {
+    transform: rotate(25deg) scale(1.1);
+  }
+}
